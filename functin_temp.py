@@ -69,14 +69,14 @@ def getweather():
 #=======================#
 #  Search Box
 #=======================#
-search_image=PhotoImage(file='D:\@PROJECTS\Weather\Image\search.png')
+search_image=PhotoImage(file="./image/search.png")
 myimage=Label(image=search_image)
 myimage.place(x=14,y=20)
-textfield=tk.Entry(root,justify="center",width=20,font=("poppins",25,"bold"),bg="#404040",fg="white")
+textfield=tk.Entry(root,justify="center",width=20,font=("poppins",25,"bold"),bg="#404040",fg="white",borderwidth=0,takefocus = 0)
 textfield.place(x=50,y=40)
 textfield.focus()
 
-search_icon=PhotoImage(file="D:\@PROJECTS\Weather/Image/search_icon.png")
+search_icon=PhotoImage(file="./image/search_icon.png")
 myimage_icon=Button(image=search_icon,borderwidth=0,cursor="hand2",bg="#404040",command=getweather)
 myimage_icon.place(x=400,y=34)
 
@@ -84,7 +84,7 @@ myimage_icon.place(x=400,y=34)
 #  LOGO
 #=======================#
 
-logo_image=PhotoImage(file="D:\@PROJECTS\Weather/Image/logo.png")
+logo_image=PhotoImage(file="./image/logo.png")
 logo=Label(image=logo_image)
 logo.place(x=150,y=100)
 
@@ -92,7 +92,7 @@ logo.place(x=150,y=100)
 #  BOTTOM BOX
 #=======================#
 
-frame_image=PhotoImage(file="D:\@PROJECTS\Weather/Image/box.png")
+frame_image=PhotoImage(file="./image/box.png")
 frame_myimage=Label(image=frame_image)
 frame_myimage.pack(padx=5, pady=5, side=BOTTOM)
 #=======================#
